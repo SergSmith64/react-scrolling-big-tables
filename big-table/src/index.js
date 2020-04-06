@@ -4,9 +4,21 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+function makeTableData(w, h) {
+  return new Array(h).fill(0).map((_, row) => {
+    return new Array(w).fill(0).map((_, col) => {
+      return row * 10 + col;
+    });
+  });
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App
+      data={makeTableData(5, 10)}
+      rowHeight={40}
+      visibleRows={3}
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );
