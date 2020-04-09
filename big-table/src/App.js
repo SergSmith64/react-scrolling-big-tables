@@ -1,7 +1,8 @@
 import React from 'react';
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 
+// __ ПЕРЕНЕС В INDEX.JS ___ И ОТКЛЮЧИЛ в INDEX.JS ___ import App from './App';
 function App({ data, rowHeight, visibleRows }) {
   return (
     <div className="App">

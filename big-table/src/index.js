@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 function makeTableData(w, h) {
@@ -12,10 +12,28 @@ function makeTableData(w, h) {
   });
 }
 
+function App({ data, rowHeight, visibleRows }) {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <table>
+          <tbody>
+            {data.map((row, rowIndex) => (
+              <tr>{row.map((text, colIndex) => (
+                <td>{text}</td>
+              ))}</tr>
+            ))}
+          </tbody>
+        </table>
+      </header>
+    </div>
+  );
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <App
-      data={makeTableData(5, 10)}
+      data={makeTableData(10, 10)}
       rowHeight={40}
       visibleRows={3}
     />
