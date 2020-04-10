@@ -13,8 +13,10 @@ code {
 
 .App {
   text-align: center;
+  background-color: #1d1d91;
+  color: red;
 }
-.App-header {
+/* .App-header {
   background-color: #1d1d91;
   min-height: 100vh;
   display: flex;
@@ -22,14 +24,14 @@ code {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: yellow;
-}
+  color: red;
+} */
 table {
   border-collapse: collapse;
-  width: 94%;
+  width: 100%;
 }
 td {
   box-sizing: border-box;
-  padding: 10px;
-  border: 1px solid pink;
+  /* padding: 10px; */
+  border: 1px solid green;
 }

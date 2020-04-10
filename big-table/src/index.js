@@ -18,7 +18,7 @@ function App({ data, rowHeight, visibleRows }) {
   return (
     <div style={{ height: rowHeight * visibleRows + 3, overflow: 'auto' }}>
       <div className="App">
-        <header className="App-header">
+        {/* <header className="App-header"> */}
         <div style={{ height: getTopHeight() }} />
 
           <table>
@@ -34,7 +34,7 @@ function App({ data, rowHeight, visibleRows }) {
           </table>
 
           <div style={{ height: getTopHeight() }} />
-        </header>
+        {/* </header> */}
       </div>
     </div>
   );
